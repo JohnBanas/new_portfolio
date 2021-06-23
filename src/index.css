@@ -11,3 +11,55 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  font-size: 75%;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+header, h1 {
+  margin-top: 1rem;
+}
+
+header, p {
+  margin-bottom: 5rem;
+}
+
+#aboutMeBtn,
+#previousWorkBtn,
+#contactBtn {
+  border-color: whitesmoke;
+  background-color: black;
+  color: white;
+}
+
+#aboutMeBtn:hover,
+#previousWorkBtn:hover,
+#contactBtn:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.664);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.navBarLinks {
+  list-style: none;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+article {
+  color: black;
+}
