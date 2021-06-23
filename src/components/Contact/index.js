@@ -73,7 +73,7 @@ function ContactForm() {
         <Form.Label className="text-primary" htmlFor="email">Email address</Form.Label>
         <Form.Control type="email" defaultValue={email}  onBlur={handleChange} />
     <Form.Text className="text-muted">
-      We'll never share your email with anyone else.
+      All email addresses are kept confidential.
     </Form.Text>
   </Form.Group>
 

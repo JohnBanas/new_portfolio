@@ -3,11 +3,18 @@ import Favicon from '../../assets/images/favicon-32x32.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
-function Navigation() {
-  // const {contactSelected setContactSelected}
+function Navigation(props) {
+  const {
+    setAbout,
+    setPortfolio,
+    setResume,
+    setContact
+  } = props;
+
   return (
-    <Navbar bg="dark" variant="dark">
-      <Navbar.Brand href="#home">
+    <Navbar defaultActiveKey="about" variant="dark">
+
+      <Navbar.Brand>
         <img
           alt="JB"
           src= {Favicon}
@@ -19,11 +26,32 @@ function Navigation() {
           John Patrick Banas
         </Navbar.Text>
       </Navbar.Brand>
-      <Nav className="mr-auto" variant="pills warning" defaultActiveKey="#about">
-        <Nav.Link className="text-black " href="#about">About</Nav.Link>
-        <Nav.Link className="text-black" href="#portfolio">Portfolio</Nav.Link>
-        <Nav.Link className="text-black" href="#resume">Resume</Nav.Link>
-        <Nav.Link className="text-black" href="#contact">Contact</Nav.Link>
+      <Nav className="mr-auto">
+        <Nav.Link href="about" onClick={() => {
+          setAbout(true);
+          setPortfolio(false);
+          setResume(false);
+          setContact(false);
+        }}>About</Nav.Link>
+        <Nav.Link eventKey="portfolio" onClick={() =>{
+          setAbout(false);
+          setPortfolio(true);
+          setResume(false);
+          setContact(false);
+        }}>Portfolio</Nav.Link>
+        <Nav.Link eventKey="resume" onClick={() =>{
+          setAbout(false);
+          setPortfolio(false);
+          setResume(true);
+          setContact(false);
+        }}>Resume</Nav.Link>
+        <Nav.Link eventKey="contact"
+          onClick={() => {
+            setAbout(false);
+            setPortfolio(false);
+            setResume(false);
+            setContact(true);
+          }}>Contact</Nav.Link>
       </Nav>
       </Navbar>
   );

@@ -1,32 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import About from './components/About';
-import Navigation from './components/Nav';
+import Header from './components/Header';
 import ContactForm from './components/Contact';
-import Project from './components/Project';
+import Portfolio from './components/Portfolio';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
-// import Portfolio from './components/Portfolio';
 
 function App() {
 
-  // const [contactSelected, setContactSelected] = useState(false);
+  const [isAbout, setAbout] = useState(true);
+  const [isPortfolio, setPortfolio] = useState(false);
+  const [isResume, setResume] = useState(false);
+  const [isContact, setContact] = useState(false);
+  
   return (
     
     <div>
-      <Navigation
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
-      >
-      </Navigation>
+      <Header
+        isAbout={isAbout}
+        setAbout={setAbout}
+        isPortfolio={isPortfolio}
+        setPortfolio={setPortfolio}
+        isResume={isResume}
+        setResume={setResume}
+        isContact={isContact}
+        setContact={setContact}
+      />
       <main>
-        {/* {!contactSelected ? (
-          <> */}
-            <About></About>
-          {/* </>
-        ) : ( */}
-          <ContactForm></ContactForm>
-        {/* )} */}
-        <Project />
+          {isAbout &&  <About></About>}
+        {isContact &&  <ContactForm />}
+        {isPortfolio && <Portfolio />}
+        {isResume && <Resume />}
       </main>
       <Footer />
     </div>

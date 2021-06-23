@@ -1,17 +1,17 @@
 import React from 'react';
-import profilePic from '../../assets/images/new_profile.jpg';
+import profilePic from '../../assets/images/new_profile.png';
 import Image from 'react-bootstrap/Image'
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
 
 function About() {
   return (
-    <Container>
-      <Row>
-        <h1 className="text-primary" id="about">A Blurb</h1>
+    <Container className="mt-5">
+      <Row className="justify-content-center">
+        <Image src={profilePic} alt="profile" width="200" height="200" roundedCircle />
       </Row>
       <Row>
-        <Image src={profilePic} alt="profile" width="150" height="150" roundedCircle />
+        <h1 className="text-primary ml-5" id="about">A Blurb</h1>
       </Row>
       <Row>
         <div>
