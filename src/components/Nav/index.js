@@ -15,15 +15,15 @@ function Navigation() {
           height="64"
           className="d-inline-block align-top"
         />{'  '}
-        <Navbar.Text>
+        <Navbar.Text className="text-black">
           John Patrick Banas
         </Navbar.Text>
       </Navbar.Brand>
-      <Nav className="mr-auto" variant="pills" defaultActiveKey="#about">
-        <Nav.Link href="#about">About</Nav.Link>
-        <Nav.Link href="#portfolio">Portfolio</Nav.Link>
-        <Nav.Link href="#resume">Resume</Nav.Link>
-        <Nav.Link href="#contact">Contact</Nav.Link>
+      <Nav className="mr-auto" variant="pills warning" defaultActiveKey="#about">
+        <Nav.Link className="text-black " href="#about">About</Nav.Link>
+        <Nav.Link className="text-black" href="#portfolio">Portfolio</Nav.Link>
+        <Nav.Link className="text-black" href="#resume">Resume</Nav.Link>
+        <Nav.Link className="text-black" href="#contact">Contact</Nav.Link>
       </Nav>
       </Navbar>
   );

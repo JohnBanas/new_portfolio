@@ -35,26 +35,6 @@ header, p {
   margin-bottom: 5rem;
 }
 
-#aboutMeBtn,
-#previousWorkBtn,
-#contactBtn {
-  border-color: whitesmoke;
-  background-color: black;
-  color: white;
-}
-
-#aboutMeBtn:hover,
-#previousWorkBtn:hover,
-#contactBtn:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 255, 255, 0.664);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
-}
-
-.navBarLinks {
-  list-style: none;
-}
 
 section {
   margin-bottom: 5rem;
@@ -62,4 +42,8 @@ section {
 
 article {
   color: black;
+}
+
+Nav.link.active {
+    background-color: #ffc107 !important;
 }

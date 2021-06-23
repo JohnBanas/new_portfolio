@@ -5,20 +5,24 @@ import Row from 'react-bootstrap/Row';
 function Footer() {
 
   return (
-    
-      <footer className="footer">
+
+    <footer className="footer mb-4 bg-grey">
       <Container>
-        <Row>
-          <a size="lg" href="/">whatever</a>
-          <span>&copy; 2020 JPB</span>
+        <Row className="justify-content-center">
+          <a href="https://www.linkedin.com/in/john-banas-2a9378203/" className="text-primary">Linked In</a>
         </Row>
-        <Row>
-          <span>Powered by:</span>
-            <a href="/">my hands</a>
-            </Row>
-        </Container>
-      </footer>
-    
+        <Row className="justify-content-center">
+          <a href="https://github.com/JohnBanas" className="text-primary">GitHub</a>
+        </Row>
+        <Row className="justify-content-center">
+          <a href="https://dev.to/johnbanas" className="text-primary">Dev</a>
+        </Row>
+        <Row className="justify-content-center">
+          <span className="text-primary"> &copy; 2021 John Patrick Banas </span>
+        </Row>
+      </Container>
+    </footer>
+
   );
 
 };

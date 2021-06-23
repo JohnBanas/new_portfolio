@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import {capitalizeRepo} from '../../utils/helper';
 
 
 function Project() {
@@ -42,10 +43,10 @@ function Project() {
   //map through projects to create slides for carousel
   const slides = myProject.map((myProject) => {
     return (
-      <Col className="mt-5, mb-5">
-        <h2 className="text-warning"><strong>{myProject.title}</strong></h2>
+      <Col className="mt-5, mb-5" key={myProject.title}>
+        <h2 className="text-primary"><strong>{capitalizeRepo(myProject.title)}</strong></h2>
         <Card style={{ width: '20rem', height:'35rem'}}>
-          <Card.Img variant="bottom" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title} rounded />
+          <Card.Img variant="bottom" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title}/>
           <Card.Body>
             <Card.Title className="text-dark">
               {myProject.description}
