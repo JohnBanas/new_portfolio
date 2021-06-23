@@ -12,7 +12,7 @@ function Navigation(props) {
   } = props;
 
   return (
-    <Navbar defaultActiveKey="about" variant="dark">
+    <Navbar variant="dark">
 
       <Navbar.Brand>
         <img
