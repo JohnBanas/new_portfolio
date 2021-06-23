@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Favicon from '../../assets/images/favicon-32x32.png';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -11,8 +11,8 @@ function Navigation() {
         <img
           alt="JB"
           src= {Favicon}
-          width="32"
-          height="32"
+          width="64"
+          height="64"
           className="d-inline-block align-top"
         />{'  '}
         <Navbar.Text>

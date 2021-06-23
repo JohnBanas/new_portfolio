@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import Image from 'react-bootstrap/Image'
-import Carousel from 'react-bootstrap/Carousel';
+import Container from 'react-bootstrap/Container';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 
 
 function Project() {
   const myProject = [
     {
-      title: 'code-quiz',
+      title: 'coding-quiz',
       description: 'A timed multiple choice coding quiz application.',
       deployed: 'https://johnbanas.github.io/coding-quiz/'
     },
@@ -40,24 +42,30 @@ function Project() {
   //map through projects to create slides for carousel
   const slides = myProject.map((myProject) => {
     return (
-      <Carousel.Item>
-        <Carousel.Caption>
-          <h3>
-            {myProject.title}
-          </h3>
-          <p>{myProject.description}</p>
-          <a href={myProject.deployed}>Deployment</a>
-          <a href={`https://github.com/JohnBanas/${myProject.title}`}>GitHub</a>
-        </Carousel.Caption>
-        <Image src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title} width="350" height="350" rounded />
-      </Carousel.Item>
+      <Col className="mt-5, mb-5">
+        <h2 className="text-warning"><strong>{myProject.title}</strong></h2>
+        <Card style={{ width: '20rem', height:'35rem'}}>
+          <Card.Img variant="bottom" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title} rounded />
+          <Card.Body>
+            <Card.Title className="text-dark">
+              {myProject.description}
+            </Card.Title>
+            <Card.Text className="text-dark">
+            <a href={myProject.deployed}>Deployment</a> <br></br>
+              <a href={`https://github.com/JohnBanas/${myProject.title}`}>GitHub</a>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      </Col>
     );
-  }); 
+  });
 
   return (
-    <Carousel>
-      {slides}
-    </Carousel>
+    <Container>
+      <Row className="mt-5, mb-5">
+        {slides}
+      </Row>
+    </Container>
   );
 
 }

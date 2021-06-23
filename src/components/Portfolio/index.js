@@ -1,10 +1,11 @@
-// import React, { useState } from 'react';
-// import Project from '../Project';
+import React from 'react';
+import Project from '../Project';
 
-// function Portfolio() {
-  
-//   return (
+function Portfolio() {
 
-//   );
-// }
-// export default Portfolio;
+
+  return (
+    <Project/>
+  );
+}
+export default Portfolio;

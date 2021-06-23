@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 import validateEmail from '../../utils/helper';
 
 function ContactForm() {
@@ -35,10 +37,10 @@ function ContactForm() {
   }
 
   //JSX
-  return (
+  
     <section>
-      <h1 data-testid="h1contact">Contact Me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      
+      <form >
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
@@ -56,9 +58,37 @@ function ContactForm() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )}
-        <button data-testid="contactbutton" type="submit">Submit</button>
+        <button  type="submit">Submit</button>
       </form>
     </section>
+  return (
+    < Form id="contact-form" onSubmit={handleSubmit} >
+      <Form.Group controlId="formName">
+        <Form.Label>Name</Form.Label>
+        <Form.Control type="name" placeholder="Enter your name." onBlur={handleChange} />
+        </Form.Group>
+      <Form.Group controlId="formEmail">
+    <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="Enter email" onBlur={handleChange} />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
+
+      <Form.Group controlId="textArea">
+        <Form.Label>Textarea</Form.Label>
+        <Form.Control as="textarea" rows={10} onBlur={handleChange} />
+        {errorMessage && (
+          <Form.Text className="text-danger">
+      {errorMessage}
+    </Form.Text>
+        )}
+      </Form.Group>
+      <Button data-testid="contactbutton" variant="primary" type="submit">
+    Submit
+  </Button>
+</Form >
+
   )
 }
 export default ContactForm;

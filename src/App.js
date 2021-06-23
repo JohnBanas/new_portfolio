@@ -4,6 +4,7 @@ import About from './components/About';
 import Navigation from './components/Nav';
 import ContactForm from './components/Contact';
 import Project from './components/Project';
+import Footer from './components/Footer';
 // import Portfolio from './components/Portfolio';
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
           <ContactForm></ContactForm>
         {/* )} */}
         <Project />
-        </main>
+      </main>
+      <Footer />
     </div>
       
   );
