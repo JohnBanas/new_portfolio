@@ -1,9 +1,8 @@
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import {capitalizeRepo} from '../../utils/helper';
+import { capitalizeRepo } from '../../utils/helper';
 
 
 function Project() {
@@ -43,10 +42,13 @@ function Project() {
   //map through projects to create slides for carousel
   const slides = myProject.map((myProject) => {
     return (
-      <Col className="mt-5, mb-5" key={myProject.title}>
+      <>
+      <Row className="mt-5, mb-2" key={myProject.title}>
         <h2 className="text-primary"><strong>{capitalizeRepo(myProject.title)}</strong></h2>
-        <Card style={{ width: '20rem', height:'35rem'}}>
-          <Card.Img variant="bottom" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title}/>
+        </Row>
+        <Row className="mt-2 mb-5"key={myProject.title + 2}>
+        <Card style={{ width: '40rem', height:'40rem'}}>
+          <Card.Img variant="top" width="100%" height="75%" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title}/>
           <Card.Body>
             <Card.Title className="text-dark">
               {myProject.description}
@@ -57,15 +59,16 @@ function Project() {
             </Card.Text>
           </Card.Body>
         </Card>
-      </Col>
+        </Row>
+        </>
+      
     );
   });
 
   return (
-    <Container>
-      <Row className="mt-5, mb-5">
-        {slides}
-      </Row>
+
+    <Container className="mt-5, mb-5">
+      {slides}
     </Container>
   );
 

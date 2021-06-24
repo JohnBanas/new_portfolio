@@ -8,6 +8,14 @@ import Row from 'react-bootstrap/Row';
 function Resume() {
   return (
     <Container>
+      <Row>
+        <h3>Current technologies:</h3>
+        <ul>
+          <li key="1">
+
+          </li>
+        </ul>
+      </Row>
       <Row className="justify-content-center mt-3 mb-5">
     <a download={resume} href={resume} title="resume">
       <Image alt="resume" src={resumePic} />

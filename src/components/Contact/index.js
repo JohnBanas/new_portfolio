@@ -38,40 +38,15 @@ function ContactForm() {
     console.log(formState);
   }
 
-  //JSX
-  
-    // <section>
-      
-    //   <form >
-    //     <div>
-    //       <label htmlFor="name">Name:</label>
-    //       <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
-    //     </div>
-    //     <div>
-    //       <label htmlFor="email">Email address:</label>
-    //       <input type="email" defaultValue={email} onBlur={handleChange} name="email" />
-    //     </div>
-    //     <div>
-    //       <label htmlFor="message">Message:</label>
-    //       <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
-    //     </div>
-    //     {errorMessage && (
-    //       <div>
-    //         <p className="error-text">{errorMessage}</p>
-    //       </div>
-    //     )}
-    //     <button  type="submit">Submit</button>
-    //   </form>
-    // </section>
   return (
     < Form id="contact-form" onSubmit={handleSubmit} >
       <Form.Group>
         <Form.Label className="text-primary" htmlFor="name">Name</Form.Label>
-        <Form.Control type="text" defaultValue={name}  onBlur={handleChange} />
+        <Form.Control type="text" defaultValue={name} name="Name"  onBlur={handleChange} />
         </Form.Group>
       <Form.Group>
         <Form.Label className="text-primary" htmlFor="email">Email address</Form.Label>
-        <Form.Control type="email" defaultValue={email}  onBlur={handleChange} />
+        <Form.Control type="email" defaultValue={email} name="Email" onBlur={handleChange} />
     <Form.Text className="text-muted">
       All email addresses are kept confidential.
     </Form.Text>
@@ -79,7 +54,7 @@ function ContactForm() {
 
       <Form.Group>
         <Form.Label className="text-primary" htmlFor="message">Message</Form.Label>
-        <Form.Control as="textarea" defaultValue={message} rows={10} onBlur={handleChange} />
+        <Form.Control as="textarea" defaultValue={message} name="Message" rows={10} onBlur={handleChange} />
         {errorMessage && (
           <Form.Text className="text-danger error-text">
       {errorMessage}

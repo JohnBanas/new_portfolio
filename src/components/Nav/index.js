@@ -12,7 +12,7 @@ function Navigation(props) {
   } = props;
 
   return (
-    <Navbar variant="dark">
+    <Navbar variant="dark" bg="dark" className="mb-5">
 
       <Navbar.Brand>
         <img
@@ -27,7 +27,7 @@ function Navigation(props) {
         </Navbar.Text>
       </Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="about" onClick={() => {
+        <Nav.Link eventKey="about" onClick={() => {
           setAbout(true);
           setPortfolio(false);
           setResume(false);
