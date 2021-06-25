@@ -5,7 +5,7 @@ function Portfolio() {
 
 
   return (
-    <Project/>
+    <Project />
   );
 }
 export default Portfolio;

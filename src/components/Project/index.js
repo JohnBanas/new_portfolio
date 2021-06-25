@@ -43,25 +43,31 @@ function Project() {
   const slides = myProject.map((myProject) => {
     return (
       <>
-      <Row className="mt-5, mb-2" key={myProject.title}>
-        <h2 className="text-primary"><strong>{capitalizeRepo(myProject.title)}</strong></h2>
-        </Row>
-        <Row className="mt-2 mb-5"key={myProject.title + 2}>
-        <Card style={{ width: '40rem', height:'40rem'}}>
-          <Card.Img variant="top" width="100%" height="75%" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title}/>
-          <Card.Body>
-            <Card.Title className="text-dark">
-              {myProject.description}
-            </Card.Title>
-            <Card.Text className="text-dark">
-            <a href={myProject.deployed}>Deployment</a> <br></br>
+        <Row className="mt-5, mb-2" key={myProject.title}>
+          <Container>
+            <Row>
+              <h2 className="text-primary"><strong>{capitalizeRepo(myProject.title)}</strong></h2>
+            </Row>
+            <Row>
+              <a href={myProject.deployed}>Deployment</a>
+            </Row>
+            <Row>
               <a href={`https://github.com/JohnBanas/${myProject.title}`}>GitHub</a>
-            </Card.Text>
-          </Card.Body>
-        </Card>
+            </Row>
+          </Container>
         </Row>
-        </>
-      
+        <Row className="mt-2 mb-5" key={myProject.title + 2}>
+          <Card style={{ width: '40rem', height: '40rem' }}>
+            <Card.Img variant="top" width="100%" height="60%" src={require(`../../assets/images/${myProject.title}.png`).default} alt={myProject.title} />
+            <Card.Body>
+              <Card.Title className="text-dark">
+                {myProject.description}
+              </Card.Title>
+            </Card.Body>
+          </Card>
+        </Row>
+      </>
+
     );
   });
 
