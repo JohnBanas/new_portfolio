@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/new_portfolio/static/css/main.361c997a.chunk.css",
+    "main.js": "/new_portfolio/static/js/main.5de2deac.chunk.js",
+    "main.js.map": "/new_portfolio/static/js/main.5de2deac.chunk.js.map",
+    "runtime-main.js": "/new_portfolio/static/js/runtime-main.c6d35363.js",
+    "runtime-main.js.map": "/new_portfolio/static/js/runtime-main.c6d35363.js.map",
+    "static/js/2.a6dee3eb.chunk.js": "/new_portfolio/static/js/2.a6dee3eb.chunk.js",
+    "static/js/2.a6dee3eb.chunk.js.map": "/new_portfolio/static/js/2.a6dee3eb.chunk.js.map",
+    "static/js/3.5ba885d3.chunk.js": "/new_portfolio/static/js/3.5ba885d3.chunk.js",
+    "static/js/3.5ba885d3.chunk.js.map": "/new_portfolio/static/js/3.5ba885d3.chunk.js.map",
+    "index.html": "/new_portfolio/index.html",
+    "static/css/main.361c997a.chunk.css.map": "/new_portfolio/static/css/main.361c997a.chunk.css.map",
+    "static/js/2.a6dee3eb.chunk.js.LICENSE.txt": "/new_portfolio/static/js/2.a6dee3eb.chunk.js.LICENSE.txt",
+    "static/media/Resume.1e49988c.pdf": "/new_portfolio/static/media/Resume.1e49988c.pdf",
+    "static/media/Resume.4fe6438e.jpg": "/new_portfolio/static/media/Resume.4fe6438e.jpg",
+    "static/media/about.png": "/new_portfolio/static/media/about.0c628371.png",
+    "static/media/coding-quiz.png": "/new_portfolio/static/media/coding-quiz.a4bebf78.png",
+    "static/media/contact.png": "/new_portfolio/static/media/contact.81ee237f.png",
+    "static/media/horiseon-landing-page.png": "/new_portfolio/static/media/horiseon-landing-page.6e4068ce.png",
+    "static/media/motivation-manager.png": "/new_portfolio/static/media/motivation-manager.a4dc5e55.png",
+    "static/media/new_profile.png": "/new_portfolio/static/media/new_profile.e1a9349c.png",
+    "static/media/portfolio.png": "/new_portfolio/static/media/portfolio.98c4419d.png",
+    "static/media/resume.png": "/new_portfolio/static/media/resume.4c91e707.png",
+    "static/media/tech-blog.png": "/new_portfolio/static/media/tech-blog.d200162f.png",
+    "static/media/weather-dashboard.png": "/new_portfolio/static/media/weather-dashboard.5acf6676.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c6d35363.js",
+    "static/js/2.a6dee3eb.chunk.js",
+    "static/css/main.361c997a.chunk.css",
+    "static/js/main.5de2deac.chunk.js"
+  ]
+}
