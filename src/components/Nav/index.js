@@ -26,7 +26,7 @@ function Navigation(props) {
           John Patrick Banas
         </Navbar.Text>
       </Navbar.Brand>
-      <Nav className="mr-auto">
+      <Nav className="mr-auto" defaultActiveKey="about">
         <Nav.Link eventKey="about" onClick={() => {
           setAbout(true);
           setPortfolio(false);
