@@ -85,7 +85,7 @@
 
 <p>To see this portfolio for yourself simply click the link below:<p>
 
-[https://johnbanas.github.io/new_portfolio/](https://johnbanas.github.io/new_portfolio/)
+[https://shielded-ocean-01755.herokuapp.com/](https://shielded-ocean-01755.herokuapp.com/)
 
 <p>&nbsp</p>
 
