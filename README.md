@@ -5,13 +5,14 @@
 
 
 <h2>Table of Contents 📚<h2>
+  
 * [Navigation](#Navigation)
 * [About](#about)
 * [Portfolio](#portfolio)
 * [Resume](#resume)
 * [Contact](#contact)
 * [Footer](#footer)
-* [Live Deployment](#deployed)
+* [Live Deployment](#deployment)
 * [Built With](#built)
 * [Future Updates](#future)
 * [Author](#author)
@@ -84,7 +85,7 @@
 
 <p>To see this portfolio for yourself simply click the link below:<p>
 
-[https://johnbanas.github.io/new_portfolio/](https://johnbanas.github.io/new_portfolio/)
+[https://shielded-ocean-01755.herokuapp.com/](https://shielded-ocean-01755.herokuapp.com/)
 
 <p>&nbsp</p>
 
