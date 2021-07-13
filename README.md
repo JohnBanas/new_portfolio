@@ -12,7 +12,7 @@
 * [Resume](#resume)
 * [Contact](#contact)
 * [Footer](#footer)
-* [Live Deployment](#deployed)
+* [Live Deployment](#deployment)
 * [Built With](#built)
 * [Future Updates](#future)
 * [Author](#author)
