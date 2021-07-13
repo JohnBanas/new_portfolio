@@ -1,6 +1,7 @@
 import React from 'react';
 import resume from '../../assets/images/Resume.pdf';
-import resumePic from '../../assets/images/Resume.jpg';
+import resumePic1 from '../../assets/images/resume1.jpg';
+import resumePic2 from '../../assets/images/resume2.jpg'
 import Image from 'react-bootstrap/Image';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -72,10 +73,13 @@ function Resume() {
       </Row>
       <Row className="justify-content-center mb-5">
         <Container>
-          <p><em>Click the image below to download full PDF resume.</em></p>
+          <p><em>Click one of the images below to download full PDF resume.</em></p>
         </Container>
     <a download={resume} href={resume} title="resume">
-      <Image alt="resume" src={resumePic} />
+          <Image alt="resume" src={resumePic1} />
+        </a>
+        <a download={resume} href={resume} title="resume">
+          <Image alt="resume" src={resumePic2} />
         </a>
       </Row>
     </Container>
