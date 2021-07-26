@@ -36,7 +36,12 @@ function Project() {
       title: 'horiseon-landing-page',
       description: 'Landing page example, using HTML & CSS.',
       deployed: 'https://johnbanas.github.io/horiseon-landing-page/'
-    }
+    },
+    {
+      title: 'final-project',
+      description: 'AR ecommerce app',
+      deployed: 'https://quiet-woodland-22294.herokuapp.com/'
+  }
   ];
 
   //map through projects to create slides for carousel
